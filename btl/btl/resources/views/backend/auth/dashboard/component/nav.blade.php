@@ -9,6 +9,10 @@
         </form>
     </div>
         <ul class="nav navbar-top-links navbar-right">
+            <li><a href="{{ route('news.index') }}" target="_blank">
+                <button>Mở trang tin tức</button>
+            </a>
+            </li>
             <li>
                 <span class="m-r-sm text-muted welcome-message">Chào mừng bạn đến với trang Admin.</span>
             </li>

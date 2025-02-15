@@ -26,9 +26,11 @@
                             <span class="fa arrow"></span>
                         </div>
                         <ul class="nav nav-second-level">
-                            
-                            <li><a href="{{ route('user.index') }}">Quản lý thành viên</a></li>
-                            <li>
+                            <li><a href="{{ route('users.index') }}">Danh sách thành viên</a></li>
+                            <li><a href="{{ route('users.create') }}">Thêm thành viên</a></li>
+                        </ul>
+                    </li>
+                    
                                 <div class="nav-link d-flex align-items-center" style="cursor: pointer;">
                                     <i class="fa fa-newspaper-o mr-2"></i> 
                                     <span class="nav-label">Quản lý danh mục tin tức</span> 

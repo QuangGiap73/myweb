@@ -14,7 +14,7 @@ use App\Http\Controllers\Backend\PostController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\CommentsssController;
 use App\Http\Controllers\AdminCommentsssController;
-
+use App\Http\Controllers\Admin\UsersController;
 
 
 Route::get('/', function () {
@@ -105,3 +105,8 @@ Route::post('/comments/{postId}', [CommentsssController::class, 'store'])->name(
 Route::delete('/comments/{id}', [CommentsssController::class, 'destroy'])->name('comments.destroy');
 Route::get('/admin/comments', [AdminCommentsssController::class, 'index'])->name('comments.index');
 Route::delete('/admin/comments/{id}', [AdminCommentsssController::class, 'destroy'])->name('comments.destroy');
+
+Route::prefix('admin')->middleware(AuthenticateMiddleware::class)->group(function () {
+    Route::resource('users', UserController::class);
+});
+
