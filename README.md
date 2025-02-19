@@ -1,7 +1,8 @@
 # Giới Thiệu
+👨‍💻 Võ Quang Giáp
 ## Web cập nhật tin tức.
 ## Mô tả ứng dụng và mục đích của dự án Web tin tức 
-1. Giới thiệu ứng dụng.
+1. Giới thiệu ứng dụng.<br>
    Ứng dụng Web Tin Tức là một hệ thống quản lý và hiển thị tin tức trực tuyến, cho phép người dùng xem tin tức theo danh mục, tìm kiếm bài viết, bình luận và tương tác với nội dung. Hệ thống này có một bảng điều khiển quản trị viên (Admin Panel) giúp quản lý danh mục, bài viết, bình luận và thành viên.
 mục đích
 2. Mục đích của dự án.<br>
@@ -30,7 +31,6 @@ mục đích
       - MySQL: Quản lý dữ liệu bài viết, người dùng, bình luận...<br>
       - Migration & Seeder: Hỗ trợ tạo bảng, thêm dữ liệu mẫu dễ dàng <br>
       - Relationship: Xây dựng quan hệ giữa các bảng như User - Post - Comment. <br>
-   4. Triển khai & Hosting<br>
       - Server: Sử dụng Aiven quản lí cơ sở dữ liệu trên server, với tính năng sao lưu tự động, bảo mật cao, và khả năng mở rộng dễ dàng.<br>
 
 # Quá trình phát triển dự án 
@@ -77,5 +77,26 @@ mục đích
 
 
 # Sơ đồ chức năng ( sơ đồ thuật toán ).
+   1. Chức năng đăng nhập
+      ![Chức năng đăng nhap](https://github.com/user-attachments/assets/57805031-a8bb-48ed-b9f5-9a99d4e6743c)
+   2.Chức năng đăng kí
+      ![chức năng đăng kí](https://github.com/user-attachments/assets/79b2547c-d256-47a7-9485-d581d5b3562c)
+   3.Chức năng quản lí thành viên
+      ![chức năng quản lí](https://github.com/user-attachments/assets/9feec77f-b4a6-4344-bee1-b93e70cd237b)
+   4.Chức năng quản lí danh mục
+      ![chức năng quản lí danh mục](https://github.com/user-attachments/assets/df309409-de78-44a7-9e1a-0585e093f4ca)
+   5.Chức năng quản lí bài viết
+      ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)
+   6.Chức năng quản lí comment
+     ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)
+
+
+
+
+
+
+
+      
+      
 
 # chu trình phát triển
