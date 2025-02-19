@@ -33,7 +33,9 @@ mục đích
    4. Triển khai & Hosting<br>
       - Server: Sử dụng Aiven quản lí cơ sở dữ liệu trên server, với tính năng sao lưu tự động, bảo mật cao, và khả năng mở rộng dễ dàng.<br>
 
-3 quá trình phát triển phần mềm 
-# sơ đồ khooisi (url)
+# Quá trình phát triển dự án 
+## Sơ đồ khối (url)
+![sơ đồ khối web tin tức ](https://github.com/user-attachments/assets/bea038aa-bb66-44f8-a03f-a550f9f190f9)
+
 # sơ dồ chức nawbg (sơ đồ thuật toans)
 # chu trình phát triển
