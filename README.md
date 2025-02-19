@@ -37,6 +37,7 @@ mục đích
 ## Sơ đồ khối (url)
 
 ![sơ đồ khối web tin tức ](https://github.com/user-attachments/assets/bea038aa-bb66-44f8-a03f-a550f9f190f9)
+![image](https://github.com/user-attachments/assets/91c630d8-b669-4096-8f59-5cd57eff5762)
 
 
 # sơ dồ chức nawbg (sơ đồ thuật toans)
