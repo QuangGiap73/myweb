@@ -83,10 +83,39 @@ mục đích
       ![chức năng đăng kí](https://github.com/user-attachments/assets/79b2547c-d256-47a7-9485-d581d5b3562c)<br>
    3.Chức năng quản lí thành viên<br>
       ![chức năng quản lí](https://github.com/user-attachments/assets/9feec77f-b4a6-4344-bee1-b93e70cd237b)<br>
+      Thuật toán chi tiết quản lí thành viên <br>
+         1. Hiển thị danh sách thành viên:<br>
+            - Truy vấn database -> Lấy danh sách thành viên -> Hiển thị lên view.<br>
+         2. Thêm thành viên:<br>
+            - Nhập thông tin từ form -> Validate dữ liệu -> Lưu vào database.<br>
+         3. Sửa thành viên:<br>
+            - Chọn thành viên cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.<br>
+         4. Xóa thành viên:<br>
+            - Chọn thành viên cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
+         
    4.Chức năng quản lí danh mục<br>
       ![chức năng quản lí danh mục](https://github.com/user-attachments/assets/df309409-de78-44a7-9e1a-0585e093f4ca)<br>
+      Thuật toán chi tiết quản lí danh mục <br>
+      1. Thêm danh mục:<br>
+         - Nhập tên danh mục từ form -> Validate -> Lưu vào database<br>
+      2. Sửa danh mục:<br>
+         - Chọn danh mục cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.<br>
+      3. Xóa danh mục:<br>
+         - Chọn danh mục cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
    5.Chức năng quản lí bài viết<br>
       ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)<br>
+      Thuật toán chi tiết quản lí bài viết <br>
+      1. Tạo bài viết:
+   - Nhập tiêu đề, nội dung, chọn danh mục từ form -> Validate -> Lưu vào database.
+
+2. Đăng bài viết:
+   - Chọn bài viết từ danh sách -> Đặt trạng thái "Đã đăng" -> Cập nhật vào database.
+
+3. Cập nhật bài viết:
+   - Chọn bài viết cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.
+
+4. Xóa bài viết:
+   - Chọn bài viết cần xóa -> Xác nhận xóa -> Xóa khỏi database.
    6.Chức năng quản lí comment<br>
      ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)<br>
 
