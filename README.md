@@ -6,7 +6,7 @@
 mục đích
 2. Mục đích của dự án.
    Đối với người dùng:
-   ✅ Cung cấp thông tin nhanh chóng, chính xác, được phân loại theo từng danh mục.
+   ✅ Cung cấp thông tin nhanh chóng, chính xác, được phân loại theo từng danh mục.<br>
    ✅ Cho phép người dùng đọc tin tức mà không cần đăng ký tài khoản.
    ✅ Người dùng có thể bình luận, tương tác với bài viết (nếu có tài khoản).
    Đối với quản trị viên:
