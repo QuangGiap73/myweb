@@ -34,6 +34,9 @@ mục đích
       - Server: Sử dụng Aiven quản lí cơ sở dữ liệu trên server, với tính năng sao lưu tự động, bảo mật cao, và khả năng mở rộng dễ dàng.<br>
 
 # Quá trình phát triển dự án 
+## Sơ đồ lớp 
+![image](https://github.com/user-attachments/assets/292d054a-f40c-4140-b929-e40a51f66864)
+
 ## Sơ đồ khối (url)
 
 
