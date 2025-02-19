@@ -34,10 +34,10 @@ mục đích
       - Server: Sử dụng Aiven quản lí cơ sở dữ liệu trên server, với tính năng sao lưu tự động, bảo mật cao, và khả năng mở rộng dễ dàng.<br>
 
 # Quá trình phát triển dự án 
-## Sơ đồ lớp 
+## Sơ đồ lớp (Class Diagram)
 ![image](https://github.com/user-attachments/assets/292d054a-f40c-4140-b929-e40a51f66864)
 
-## Sơ đồ khối (url)
+## Sơ đồ khối ((Structural Diagram))
 
 
 ![image](https://github.com/user-attachments/assets/91c630d8-b669-4096-8f59-5cd57eff5762)
@@ -89,14 +89,5 @@ mục đích
       ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)<br>
    6.Chức năng quản lí comment<br>
      ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)<br>
-
-
-
-
-
-
-
-      
-      
 
 # chu trình phát triển
