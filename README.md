@@ -70,6 +70,8 @@ mục đích
       - Quản trị viên có thể quản lý nội dung qua trang admin.<br>
       - Khi có bài viết mới hoặc chỉnh sửa bài viết, hệ thống cập nhật dữ liệu.<br>
       - Quản trị viên kiểm soát bình luận để đảm bảo nội dung phù hợp.<br>
+# Sơ đồ lớp 
+![image](https://github.com/user-attachments/assets/cc8ea553-4588-4ed3-b613-ec4b1ba97f8a)
 
 
 # Sơ đồ chức năng ( sơ đồ thuật toán ).
