@@ -39,6 +39,38 @@ mục đích
 
 ![image](https://github.com/user-attachments/assets/91c630d8-b669-4096-8f59-5cd57eff5762)
 
+   Giải thích chi tiết về sơ đồ khối hệ thống web tin tức<br>
+   Hệ thống web tin tức có các thành phần chính sau:<br>
+
+   Người dùng (User)<br>
+      Người dùng có thể xem bài viết, để lại bình luận và tìm kiếm thông tin.<br>
+      Một số người dùng có quyền tạo tài khoản, đăng nhập và tương tác với nội dung trên trang web.<br>
+      
+   Quản trị viên (Admin)<br>
+      Là người có quyền cao nhất trong hệ thống, có thể quản lý toàn bộ nội dung.<br>
+      Các chức năng bao gồm:<br>
+         Quản lý thành viên (User Management): Xem danh sách, thêm, sửa, xóa tài khoản người dùng.<br>
+         Quản lý danh mục (Category Management): Tạo, sửa, xóa danh mục tin tức.<br>
+         Quản lý bài viết (Post Management): Viết bài, sửa bài, đăng bài, xóa bài.<br>
+         Quản lý bình luận (Comment Management): Kiểm duyệt, xóa bình luận không phù hợp.<br>
+   Danh mục tin tức (Category)<br>
+      Hệ thống có nhiều danh mục để phân loại bài viết (ví dụ: Thể thao, Giải trí, Kinh tế...).<br>
+      Mỗi bài viết sẽ thuộc về một danh mục nhất định.<br>
+   Bài viết (Post)<br>
+      Là nội dung chính của trang web tin tức, bao gồm tiêu đề, ảnh, nội dung, ngày đăng, trạng thái (đã duyệt hoặc chưa duyệt).<br>
+      Bài viết có thể được tạo, chỉnh sửa hoặc xóa bởi quản trị viên.<br>
+      Bình luận (Comment)<br>
+      Người dùng có thể bình luận dưới bài viết.<br>
+      Bình luận sẽ hiển thị kèm theo tên người dùng và nội dung.<br>
+      Quản trị viên có thể kiểm soát và xóa bình luận nếu cần.<br>
+   
+   Luồng hoạt động của hệ thống<br>
+      Người dùng truy cập website và xem danh sách bài viết.<br>
+      Nếu muốn bình luận, người dùng cần đăng nhập.<br>
+      Quản trị viên có thể quản lý nội dung qua trang admin.<br>
+      Khi có bài viết mới hoặc chỉnh sửa bài viết, hệ thống cập nhật dữ liệu.<br>
+      Quản trị viên kiểm soát bình luận để đảm bảo nội dung phù hợp.<br>
+
 
 # sơ dồ chức nawbg (sơ đồ thuật toans)
 # chu trình phát triển
