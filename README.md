@@ -77,17 +77,17 @@ mục đích
 
 
 # Sơ đồ chức năng ( sơ đồ thuật toán ).
-   1. Chức năng đăng nhập
+   1. Chức năng đăng nhập<br>
       ![Chức năng đăng nhap](https://github.com/user-attachments/assets/57805031-a8bb-48ed-b9f5-9a99d4e6743c)<br>
-   2.Chức năng đăng kí
+   2.Chức năng đăng kí<br>
       ![chức năng đăng kí](https://github.com/user-attachments/assets/79b2547c-d256-47a7-9485-d581d5b3562c)<br>
-   3.Chức năng quản lí thành viên
+   3.Chức năng quản lí thành viên<br>
       ![chức năng quản lí](https://github.com/user-attachments/assets/9feec77f-b4a6-4344-bee1-b93e70cd237b)<br>
-   4.Chức năng quản lí danh mục
+   4.Chức năng quản lí danh mục<br>
       ![chức năng quản lí danh mục](https://github.com/user-attachments/assets/df309409-de78-44a7-9e1a-0585e093f4ca)<br>
-   5.Chức năng quản lí bài viết
+   5.Chức năng quản lí bài viết<br>
       ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)<br>
-   6.Chức năng quản lí comment
+   6.Chức năng quản lí comment<br>
      ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)<br>
 
 
