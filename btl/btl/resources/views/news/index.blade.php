@@ -4450,6 +4450,29 @@
 								</li>
 							</ul>
 						</div>
+						<div class="card" >
+							<div class="card-body">
+								<h5 class="card-title">Category</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">FASHION</li>
+									<li class="list-group-item">BEAUTY</li>
+									<li class="list-group-item">STREET STYLE</li>
+									<li class="list-group-item">LIFE STYLE</li>
+									<li class="list-group-item">DIY & CRAFTS</li>
+								</ul>
+							</div>
+						</div>
+		
+						<div class="card mt-4">
+							<div class="card-body">
+								<h5 class="card-title">Archive</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">JULY 2018 (9)</li>
+									<li class="list-group-item">JUNE 2018 (39)</li>
+								</ul>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -4468,37 +4491,41 @@
 	<!-- Latest -->
 	<section class="bg0 p-t-60 p-b-35">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content">
 				<div class="col-md-10 col-lg-8 p-b-20">
+					<!-- Tiêu đề -->
 					<div class="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
 						<h3 class="f1-m-2 cl3 tab01-title">
 							Bài viết mới nhất
 						</h3>
 					</div>
-        <div class="row">
-            @foreach ($posts as $post)
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        @if ($post->img)
-                            <img src="{{ asset('storage/' . $post->img) }}" class="card-img-top" alt="{{ $post->name }}">
-                        @endif
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $post->name }}</h5>
-                            <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
-                            <a href="{{ route('news.show', $post->id) }}" class="btn btn-primary">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-    
+	
+					<!-- Danh sách bài viết -->
+					<div class="row">
+						@foreach ($posts as $post)
+							<div class="col-md-4 mb-4">
+								<div class="card h-100 shadow-sm">
+									<!-- Hình ảnh bài viết -->
+									@if ($post->img)
+										<img src="{{ asset('storage/' . $post->img) }}" class="card-img-top" alt="{{ $post->name }}" style="height: 200px; object-fit: cover;">
+									@else
+										<img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Placeholder" style="height: 200px; object-fit: cover;">
+									@endif
+	
+									<!-- Nội dung bài viết -->
+									<div class="card-body d-flex flex-column">
+										<h5 class="card-title font-weight-bold">{{ $post->name }}</h5>
+										<p class="card-text flex-grow-1">{{ Str::limit($post->content, 100) }}</p>
+										<a href="{{ route('news.show', $post->id) }}" class="btn btn-primary align-self-start">Xem chi tiết</a>
+									</div>
+								</div>
+							</div>
+						@endforeach
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<!-- Footer -->
 	<footer>
 		<div class="bg2 p-t-40 p-b-25">
