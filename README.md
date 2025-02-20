@@ -4,7 +4,7 @@
 ## Mô tả ứng dụng và mục đích của dự án Web tin tức 
 1. Giới thiệu ứng dụng.<br>
    Ứng dụng Web Tin Tức là một hệ thống quản lý và hiển thị tin tức trực tuyến, cho phép người dùng xem tin tức theo danh mục, tìm kiếm bài viết, bình luận và tương tác với nội dung. Hệ thống này có một bảng điều khiển quản trị viên (Admin Panel) giúp quản lý danh mục, bài viết, bình luận và thành viên.
-mục đích
+
 2. Mục đích của dự án.<br>
    Đối với người dùng.<br>
    ✅ Cung cấp thông tin nhanh chóng, chính xác, được phân loại theo từng danh mục.<br>
@@ -96,27 +96,35 @@ mục đích
    4.Chức năng quản lí danh mục<br>
       ![chức năng quản lí danh mục](https://github.com/user-attachments/assets/df309409-de78-44a7-9e1a-0585e093f4ca)<br>
       Thuật toán chi tiết quản lí danh mục <br>
-      1. Thêm danh mục:<br>
-         - Nhập tên danh mục từ form -> Validate -> Lưu vào database<br>
-      2. Sửa danh mục:<br>
-         - Chọn danh mục cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.<br>
-      3. Xóa danh mục:<br>
-         - Chọn danh mục cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
+         1. Thêm danh mục:<br>
+            - Nhập tên danh mục từ form -> Validate -> Lưu vào database<br>
+         2. Sửa danh mục:<br>
+            - Chọn danh mục cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.<br>
+         3. Xóa danh mục:<br>
+            - Chọn danh mục cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
    5.Chức năng quản lí bài viết<br>
       ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)<br>
       Thuật toán chi tiết quản lí bài viết <br>
-      1. Tạo bài viết:
-   - Nhập tiêu đề, nội dung, chọn danh mục từ form -> Validate -> Lưu vào database.
-
-2. Đăng bài viết:
-   - Chọn bài viết từ danh sách -> Đặt trạng thái "Đã đăng" -> Cập nhật vào database.
-
-3. Cập nhật bài viết:
-   - Chọn bài viết cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.
-
-4. Xóa bài viết:
-   - Chọn bài viết cần xóa -> Xác nhận xóa -> Xóa khỏi database.
+         1. Tạo bài viết:<br>
+            - Nhập tiêu đề, nội dung, chọn danh mục từ form -> Validate -> Lưu vào database.<br>
+         2. Đăng bài viết:<br>
+            - Chọn bài viết từ danh sách -> Đặt trạng thái "Đã đăng" -> Cập nhật vào database.<br>
+         3. Cập nhật bài viết:<br>
+            - Chọn bài viết cần sửa -> Hiển thị form với dữ liệu hiện tại -> Cập nhật vào database.<br>
+         4. Xóa bài viết:<br>
+            - Chọn bài viết cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
    6.Chức năng quản lí comment<br>
      ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)<br>
-
+      Thuật toán chi tiết quản lí bình luận <br>
+      Chức năng bình luận<br>
+         1. Thêm bình luận:<br>
+            - Nhập nội dung bình luận từ form -> Validate -> Lưu vào database.<br>
+         2. Hiển thị bình luận:<br>
+            - Truy vấn database -> Lấy danh sách bình luận theo bài viết -> Hiển thị lên view.<br>
+      Quản lí bình luận trong admin<br>
+         1. Xóa bình luận:<br>
+            - Chọn bình luận cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
+         2. Cập nhật trạng thái bình luận:<br>
+            - Chọn bình luận -> Đặt trạng thái (ví dụ: ẩn/hiện) -> Cập nhật vào database.<br>
+      
 # chu trình phát triển
