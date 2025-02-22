@@ -75,14 +75,21 @@
       - Quản trị viên kiểm soát bình luận để đảm bảo nội dung phù hợp.<br>
 
 
+# Sơ đồ cấu trúc hệ thống (Structural Diagram)<br>
+![Sơ đồ cấu trúc hệ thống (Structural Diagram)](https://github.com/user-attachments/assets/ea8e4136-daf8-48e5-b222-e2170cd317a7)<br>
+# Sơ đồ chức năng chính (Functional Diagram)<br>
+![Sơ đồ chức năng chính (Functional Diagram)](https://github.com/user-attachments/assets/bb29e7fc-c821-4cc3-a669-0d4e034b9414)<br>
 
-# Sơ đồ chức năng ( sơ đồ thuật toán ).
+
+# Sơ đồ thuật toán/sơ đồ tuần tự.
    1. Chức năng đăng nhập<br>
-      ![Chức năng đăng nhap](https://github.com/user-attachments/assets/57805031-a8bb-48ed-b9f5-9a99d4e6743c)<br>
+      ![đăng nhập](https://github.com/user-attachments/assets/6886c5df-aa39-4518-ae4a-61dc2eea78d4)
+<br>
    2.Chức năng đăng kí<br>
       ![chức năng đăng kí](https://github.com/user-attachments/assets/79b2547c-d256-47a7-9485-d581d5b3562c)<br>
    3.Chức năng quản lí thành viên<br>
-      ![chức năng quản lí](https://github.com/user-attachments/assets/9feec77f-b4a6-4344-bee1-b93e70cd237b)<br>
+     ![Quản lí tài khoản](https://github.com/user-attachments/assets/85fee3cb-bf3f-494e-a4d7-f4637c098632)
+<br>
       Thuật toán chi tiết quản lí thành viên <br>
          1. Hiển thị danh sách thành viên:<br>
             - Truy vấn database -> Lấy danh sách thành viên -> Hiển thị lên view.<br>
@@ -94,7 +101,8 @@
             - Chọn thành viên cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
          
    4.Chức năng quản lí danh mục<br>
-      ![chức năng quản lí danh mục](https://github.com/user-attachments/assets/df309409-de78-44a7-9e1a-0585e093f4ca)<br>
+      ![Danh mục](https://github.com/user-attachments/assets/874d9f12-3de9-425b-af3a-1ff135de10be)
+<br>
       Thuật toán chi tiết quản lí danh mục <br>
          1. Thêm danh mục:<br>
             - Nhập tên danh mục từ form -> Validate -> Lưu vào database<br>
@@ -103,7 +111,8 @@
          3. Xóa danh mục:<br>
             - Chọn danh mục cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
    5.Chức năng quản lí bài viết<br>
-      ![chức năng tạo bài viết ](https://github.com/user-attachments/assets/77a5fc44-26d1-41be-9505-ef4be4fe13ce)<br>
+     ![Quản lí bài viết](https://github.com/user-attachments/assets/419dee4f-7c54-490f-b16b-298eab1799bb)
+<br>
       Thuật toán chi tiết quản lí bài viết <br>
          1. Tạo bài viết:<br>
             - Nhập tiêu đề, nội dung, chọn danh mục từ form -> Validate -> Lưu vào database.<br>
@@ -114,7 +123,10 @@
          4. Xóa bài viết:<br>
             - Chọn bài viết cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
    6.Chức năng quản lí comment<br>
-     ![chức năng quản lí bình luận](https://github.com/user-attachments/assets/a2f13a7f-dcc7-40b3-81f9-143c0ebd5bef)<br>
+    ![Đăng bình luận](https://github.com/user-attachments/assets/d7d039c7-896c-4885-94a9-14d37376a044)
+    ![Quản lí bình luận](https://github.com/user-attachments/assets/ec23f860-8bf3-42bf-bbf6-fc7925d6c965)
+
+<br>
       Thuật toán chi tiết quản lí bình luận <br>
       Chức năng bình luận<br>
          1. Thêm bình luận:<br>
