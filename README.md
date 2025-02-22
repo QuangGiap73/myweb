@@ -126,5 +126,7 @@
             - Chọn bình luận cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
          2. Cập nhật trạng thái bình luận:<br>
             - Chọn bình luận -> Đặt trạng thái (ví dụ: ẩn/hiện) -> Cập nhật vào database.<br>
+            ![Quản lí bài viết](https://github.com/user-attachments/assets/6c875f1b-7384-4843-a56f-38615096da85)
+
       
 # chu trình phát triển
