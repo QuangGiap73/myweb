@@ -13,5 +13,10 @@ class Category extends Model
 
     // ✅ Khai báo thuộc tính có thể gán hàng loạt
     protected $fillable = ['name'];
+    public function posts()
+{
+    return $this->hasMany(Post::class);
+}
+
 }
 

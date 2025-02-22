@@ -20,18 +20,32 @@
                         <label for="name">Tên bài viết</label>
                         <input type="text" class="form-control" name="name" required>
                     </div>
+
+                    <div class="form-group">
+                        <label for="category_id">Danh mục</label>
+                        <select class="form-control" name="category_id" required>
+                            <option value="">-- Chọn danh mục --</option>
+                            @foreach($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
                     <div class="form-group">
                         <label for="img">Hình ảnh</label>
                         <input type="file" class="form-control-file" name="img">
                     </div>
+
                     <div class="form-group">
                         <label for="content">Nội dung</label>
                         <textarea class="form-control" name="content" rows="4" required></textarea>
                     </div>
+
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" name="is_published">
                         <label class="form-check-label" for="is_published">Đăng bài</label>
                     </div>
+
                     <button type="submit" class="btn btn-success">Thêm bài viết</button>
                 </form>
             </div>

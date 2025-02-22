@@ -22,6 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 <!--===============================================================================================-->
 <!-- <link href="backend/css/bootstrap.min.css" rel="stylesheet">
     <link href="backend/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -4489,43 +4491,61 @@
 	</div> -->
 
 	<!-- Latest -->
-	<section class="bg0 p-t-60 p-b-35">
-		<div class="container">
-			<div class="row justify-content">
-				<div class="col-md-10 col-lg-8 p-b-20">
-					<!-- Tiêu đề -->
-					<div class="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
-						<h3 class="f1-m-2 cl3 tab01-title">
-							Bài viết mới nhất
-						</h3>
-					</div>
-	
-					<!-- Danh sách bài viết -->
-					<div class="row">
-						@foreach ($posts as $post)
-							<div class="col-md-4 mb-4">
-								<div class="card h-100 shadow-sm">
-									<!-- Hình ảnh bài viết -->
-									@if ($post->img)
-										<img src="{{ asset('storage/' . $post->img) }}" class="card-img-top" alt="{{ $post->name }}" style="height: 200px; object-fit: cover;">
-									@else
-										<img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Placeholder" style="height: 200px; object-fit: cover;">
-									@endif
-	
-									<!-- Nội dung bài viết -->
-									<div class="card-body d-flex flex-column">
-										<h5 class="card-title font-weight-bold">{{ $post->name }}</h5>
-										<p class="card-text flex-grow-1">{{ Str::limit($post->content, 100) }}</p>
-										<a href="{{ route('news.show', $post->id) }}" class="btn btn-primary align-self-start">Xem chi tiết</a>
-									</div>
-								</div>
-							</div>
+	<section class="bg-light py-4">
+        <div class="container">
+            <!-- Thanh danh mục -->
+			<div class="container my-3">
+				<div class="bg-light p-3 rounded shadow">
+					<nav class="nav">
+						<a class="nav-link fw-bold text-primary" href="{{ route('news.index') }}">Tất cả</a>
+						@foreach ($categories as $category)
+							<a class="nav-link text-dark" href="{{ route('category.posts', $category->id) }}">{{ $category->name }}</a>
 						@endforeach
-					</div>
+					</nav>
 				</div>
 			</div>
-		</div>
-	</section>
+
+            
+        	<section class="bg-light py-4">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-10 col-lg-8">
+							<!-- Tiêu đề -->
+							<div class="mb-4 text-center">
+								<h3 class="text-primary fw-bold">
+									Bài viết mới nhất
+								</h3>
+								<p class="text-muted">Cập nhật những tin tức mới nhất mỗi ngày</p>
+							</div>
+						</div>
+
+                <!-- Danh sách bài viết -->
+                <div class="row">
+                    @foreach ($posts as $post)
+                        <div class="col-md-6 col-lg-3 mb-4">
+                            <div class="card h-100 shadow border-0">
+                                <!-- Hình ảnh bài viết -->
+                                @if ($post->img)
+                                    <img src="{{ asset('storage/' . $post->img) }}" class="card-img-top rounded-top" alt="{{ $post->name }}" style="height: 200px; object-fit: cover;">
+                                @else
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top rounded-top" alt="Placeholder" style="height: 200px; object-fit: cover;">
+                                @endif
+
+                                <!-- Nội dung bài viết -->
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bold text-dark">{{ $post->name }}</h5>
+                                    <p class="card-text text-muted flex-grow-1">{{ Str::limit($post->content, 100) }}</p>
+                                    <a href="{{ route('news.show', $post->id) }}" class="btn btn-outline-primary align-self-start">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+		</section>
+    </div>
+			
 	<!-- Footer -->
 	<footer>
 		<div class="bg2 p-t-40 p-b-25">
@@ -4722,6 +4742,7 @@ Hãy đồng hành cùng chúng tôi để không bỏ lỡ bất kỳ thông ti
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>

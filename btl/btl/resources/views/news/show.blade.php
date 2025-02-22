@@ -8,6 +8,22 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<div class="container-fluid" style="background-color: black;">
+	<div class="container">
+    <div class="row align-items-center">
+        <!-- Cột ảnh -->
+        <div class="col-md-3">
+		<img src="{{ asset('imgs/A2.png') }}" class="img-fluid rounded shadow" alt="Ảnh Chào Mừng" style="width: 100%; height: 50%; vertical-align: middle; border-style: none;">
+        </div>
+        <!-- Cột chữ -->
+        <div class="col-md-9" style="padding-left: 50px;">
+            <h2 class="fw-bold text-primary">Chào mừng bạn đến với Web Tin Tức</h2>
+            <p class="lead text-white">Cập nhật tin tức mới nhất, nhanh chóng và chính xác. Khám phá những bài viết hấp dẫn ngay hôm nay!</p>
+            <a href="#" class="btn btn-primary btn-lg">Khám Phá Ngay</a>
+        </div>
+    </div>
+	</div>
+</div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <div class="container">
             <a class="navbar-brand" href="/">Your Logo</a>

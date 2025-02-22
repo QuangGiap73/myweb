@@ -4,6 +4,7 @@
 
     /*==================================================================
     [ Load page ]*/
+     
     try {
         $(".animsition").animsition({
             inClass: 'fade-in',

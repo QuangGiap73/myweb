@@ -7,6 +7,7 @@
  */
 ;(function (factory) {
   'use strict';
+  
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {

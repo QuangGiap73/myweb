@@ -44,6 +44,10 @@ Route::post('login', [AuthController::class, 'login'])->name('auth.login');
 Route::get('register', function () {
     return view('backend.auth.dangki');
 })->name('register');
+Route::get('login', function () {
+    return view('backend.auth.login'); // Thay 'backend.auth.dangnhap' bằng tên file blade của trang đăng nhập
+})->name('auth.login');
+
 
 Route::post('dangki', [AuthController::class, 'register'])->name('auth.dangki');
 
@@ -110,3 +114,6 @@ Route::prefix('admin')->middleware(AuthenticateMiddleware::class)->group(functio
     Route::resource('users', UserController::class);
 });
 
+
+
+Route::get('/category/{id}', [PostController::class, 'postsByCategory'])->name('category.posts');

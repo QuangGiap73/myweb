@@ -26,6 +26,8 @@
                             <th>ID</th>
                             <th>Hình ảnh</th>
                             <th>Tên bài viết</th>
+                            <th>Nội dung</th>
+                            <th>Danh mục</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
                         </tr>
@@ -42,6 +44,8 @@
                                     @endif
                                 </td>
                                 <td>{{ $post->name }}</td>
+                                <td>{!! Str::limit($post->content, 100) !!}</td>
+                                <td>{{ $post->category ? $post->category->name : 'Chưa có danh mục' }}</td>
                                 <td>{{ $post->is_published ? 'Đã đăng' : 'Chưa đăng' }}</td>
                                 <td>
                                     <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning btn-sm">Sửa</a>
