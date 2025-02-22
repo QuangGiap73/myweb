@@ -80,10 +80,10 @@
 
 
 # Sơ đồ thuật toán/sơ đồ tuần tự.
-   ##Chức năng đăng nhập<br>
+   1.Chức năng đăng nhập<br>
       ![đăng nhập](https://github.com/user-attachments/assets/6886c5df-aa39-4518-ae4a-61dc2eea78d4)
 <br>
-   ##Chức năng đăng kí<br>
+   2.Chức năng đăng kí<br>
       ![Đăng kí](https://github.com/user-attachments/assets/60f2ee1a-5729-44ee-8810-1cea6c9e5e69)
 <br>
    3.Chức năng quản lí thành viên<br>
