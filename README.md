@@ -37,10 +37,11 @@
 ## Sơ đồ lớp (Class Diagram)
 ![image](https://github.com/user-attachments/assets/292d054a-f40c-4140-b929-e40a51f66864)
 
-## Sơ đồ khối ((Structural Diagram))
+# Sơ đồ cấu trúc hệ thống (Structural Diagram)<br>
+![Sơ đồ cấu trúc hệ thống (Structural Diagram)](https://github.com/user-attachments/assets/ea8e4136-daf8-48e5-b222-e2170cd317a7)<br>
+# Sơ đồ chức năng chính (Functional Diagram)<br>
+![Sơ đồ chức năng chính (Functional Diagram)](https://github.com/user-attachments/assets/bb29e7fc-c821-4cc3-a669-0d4e034b9414)<br>
 
-
-![image](https://github.com/user-attachments/assets/91c630d8-b669-4096-8f59-5cd57eff5762)
 
    Giải thích chi tiết về sơ đồ khối hệ thống web tin tức<br>
    Hệ thống web tin tức có các thành phần chính sau:<br>
@@ -75,10 +76,7 @@
       - Quản trị viên kiểm soát bình luận để đảm bảo nội dung phù hợp.<br>
 
 
-# Sơ đồ cấu trúc hệ thống (Structural Diagram)<br>
-![Sơ đồ cấu trúc hệ thống (Structural Diagram)](https://github.com/user-attachments/assets/ea8e4136-daf8-48e5-b222-e2170cd317a7)<br>
-# Sơ đồ chức năng chính (Functional Diagram)<br>
-![Sơ đồ chức năng chính (Functional Diagram)](https://github.com/user-attachments/assets/bb29e7fc-c821-4cc3-a669-0d4e034b9414)<br>
+
 
 
 # Sơ đồ thuật toán/sơ đồ tuần tự.
