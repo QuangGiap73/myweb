@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use App\Models\Commentsss;
 use App\Models\Category;
 
@@ -14,8 +14,7 @@ class PostController extends Controller
     // Hiển thị danh sách bài viết
     public function index()
     {
-        
-        $posts = Post::with('category')->latest()->get(); // Lấy luôn thông tin danh mục
+        $posts = Post::with('category')->latest()->get();
         return view('backend.posts.index', compact('posts'));
     }
 
@@ -33,17 +32,18 @@ class PostController extends Controller
             'name' => 'required|string|max:255',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'content' => 'required|string',
-            'category_id' => 'required|exists:categories,id', // Kiểm tra danh mục hợp lệ
+            'category_id' => 'required|exists:categories,id',
         ]);
 
-        $imgPath = null;
+        $imgUrl = null;
         if ($request->hasFile('img')) {
-            $imgPath = $request->file('img')->store('posts', 'public');
+            $uploadedFile = Cloudinary::upload($request->file('img')->getRealPath())->getSecurePath();
+            $imgUrl = $uploadedFile;
         }
 
         Post::create([
             'name' => $request->name,
-            'img' => $imgPath,
+            'img' => $imgUrl,
             'content' => $request->content,
             'is_published' => $request->has('is_published'),
             'category_id' => $request->category_id,
@@ -70,11 +70,14 @@ class PostController extends Controller
         ]);
 
         if ($request->hasFile('img')) {
+            // Xóa ảnh cũ trên Cloudinary (nếu có)
             if ($post->img) {
-                Storage::disk('public')->delete($post->img);
+                Cloudinary::destroy($post->img);
             }
-            $imgPath = $request->file('img')->store('posts', 'public');
-            $post->img = $imgPath;
+
+            // Upload ảnh mới
+            $uploadedFile = Cloudinary::upload($request->file('img')->getRealPath())->getSecurePath();
+            $post->img = $uploadedFile;
         }
 
         $post->update([
@@ -91,7 +94,7 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         if ($post->img) {
-            Storage::disk('public')->delete($post->img);
+            Cloudinary::destroy($post->img);
         }
 
         // Xóa bình luận liên quan
@@ -100,16 +103,13 @@ class PostController extends Controller
         $post->delete();
         return redirect()->route('posts.index')->with('success', 'Bài viết và bình luận đã bị xóa.');
     }
+
     public function postsByCategory($id)
     {
-        $categories = Category::all(); // Lấy tất cả danh mục từ database
-        $selectedCategory = Category::findOrFail($id); // Lấy danh mục đang chọn
-        $posts = Post::where('category_id', $id)->get(); // Lấy bài viết thuộc danh mục
-    
+        $categories = Category::all();
+        $selectedCategory = Category::findOrFail($id);
+        $posts = Post::where('category_id', $id)->get();
+
         return view('frontend.categorys_posts', compact('categories', 'selectedCategory', 'posts'));
     }
-    
-
-    
-
 }

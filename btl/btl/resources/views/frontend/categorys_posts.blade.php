@@ -201,7 +201,7 @@
                     <div class="card h-100 shadow border-0">
                         <!-- Hình ảnh bài viết -->
                         @if ($post->img)
-                            <img src="{{ asset('storage/' . $post->img) }}" class="card-img-top rounded-top" alt="{{ $post->name }}" style="height: 200px; object-fit: cover;">
+                        <img src="{{ $post->img }}" class="card-img-top rounded-top" alt="{{ $post->name }}" style="height: 200px; object-fit: cover;">
                         @else
                             <img src="https://via.placeholder.com/300x200" class="card-img-top rounded-top" alt="Placeholder" style="height: 200px; object-fit: cover;">
                         @endif

@@ -37,12 +37,13 @@
                             <tr>
                                 <td>{{ $post->id }}</td>
                                 <td>
-                                    @if ($post->img)
-                                        <img src="{{ asset('storage/' . $post->img) }}" width="100" alt="Ảnh bài viết">
-                                    @else
-                                        Không có ảnh
-                                    @endif
-                                </td>
+    @if ($post->img)
+        <img src="{{ $post->img }}" width="100" alt="Ảnh bài viết">
+    @else
+        Không có ảnh
+    @endif
+</td>
+
                                 <td>{{ $post->name }}</td>
                                 <td>{!! Str::limit($post->content, 100) !!}</td>
                                 <td>{{ $post->category ? $post->category->name : 'Chưa có danh mục' }}</td>

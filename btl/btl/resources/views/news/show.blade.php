@@ -87,7 +87,7 @@
             <div class="col-md-7">
                 <h1>{{ $post->name }}</h1>
                 @if ($post->img)
-                    <img src="{{ asset('storage/' . $post->img) }}" class="img-fluid my-3" alt="{{ $post->name }}" style="width:100%; height:auto;">
+                <img src="{{ $post->img }}" class="img-fluid my-3" alt="{{ $post->name }}" style="width:100%; height:auto;">
                 @endif
                 <p>{!! nl2br(e($post->content)) !!}</p>
                 <a href="{{ route('news.index') }}" class="btn btn-secondary">Quay lại</a>
