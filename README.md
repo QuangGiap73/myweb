@@ -137,8 +137,10 @@
          1. Xóa bình luận:<br>
             - Chọn bình luận cần xóa -> Xác nhận xóa -> Xóa khỏi database.<br>
          2. Cập nhật trạng thái bình luận:<br>
-            - Chọn bình luận -> Đặt trạng thái (ví dụ: ẩn/hiện) -> Cập nhật vào database.<br>
-            ![Quản lí bài viết](https://github.com/user-attachments/assets/6c875f1b-7384-4843-a56f-38615096da85)
-
-      
+            - Chọn bình luận -> Đặt trạng thái (ví dụ: ẩn/hiện) -> Cập nhật vào database.<br>     
 # chu trình phát triển
+Trong dự án này tôi đã sử dụng Aiven, Aiven đóng vai trò là nhà cung cấp cơ sở dữ liệu Mysql giúp tôi lưu trữ vfa quản lí dữ liệu mà không cần cài đặt và vẫn hành máy chủ MySQL.
+![image](https://github.com/user-attachments/assets/0ecf8170-2cea-4cc8-adcd-62ef7bae4290)
+Trong dự án này tôi còn sử dụng cloudinary để lữu trử ảnh từ cơ sở dữ liệu
+
+
