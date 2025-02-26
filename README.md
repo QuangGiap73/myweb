@@ -140,7 +140,9 @@
             - Chọn bình luận -> Đặt trạng thái (ví dụ: ẩn/hiện) -> Cập nhật vào database.<br>     
 # chu trình phát triển
 Trong dự án này tôi đã sử dụng Aiven, Aiven đóng vai trò là nhà cung cấp cơ sở dữ liệu Mysql giúp tôi lưu trữ vfa quản lí dữ liệu mà không cần cài đặt và vẫn hành máy chủ MySQL.<br>
-![image](https://github.com/user-attachments/assets/0ecf8170-2cea-4cc8-adcd-62ef7bae4290)<br>
+
+![Ảnh](https://github.com/user-attachments/assets/0480211f-1b35-4f2d-978a-7f58b7971e43)
+
 Trong dự án này tôi còn sử dụng cloudinary để lữu trử ảnh từ cơ sở dữ liệu<br>
 
 
