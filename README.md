@@ -144,6 +144,7 @@ Trong dự án này tôi đã sử dụng Aiven, Aiven đóng vai trò là nhà 
 ![Ảnh](https://github.com/user-attachments/assets/0480211f-1b35-4f2d-978a-7f58b7971e43)
 
 Trong dự án này tôi còn sử dụng cloudinary để lữu trử ảnh từ cơ sở dữ liệu<br>
-Link public trang web : https://myweb-production-b478.up.railway.app/admin/posts
+Link public trang web : https://myweb-production-b478.up.railway.app/admin/posts <br>
+myweb-production-b478.up.railway.app
 
 
